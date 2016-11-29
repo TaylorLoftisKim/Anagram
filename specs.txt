@@ -1,0 +1,15 @@
+The program will take two words and tell the user if they are anagrams of each other.
+Input: bread, beard
+Output: true
+
+The program will take a word and a list of words and tell the user whether or not the list contains an anagram for the initial word.
+Input: bread; beard, bears, drabe, dearb, dear, pear, brade
+Output: true
+
+The program will take a word and a list of words and tell the user which words from the list are anagrams of the initial word.
+Input: bread; beard, bears, drabe, dearb, dear, pear, brade
+Output: beard, dearb, drabe, brade
+
+The program will accept any casing of the words and output the correct result.
+Input: brEAd; Beard, bearS, DrAbE, DearB, dEAr, PeAR, BraDE
+Output: Beard, DrAbE, DearB, BraDE
