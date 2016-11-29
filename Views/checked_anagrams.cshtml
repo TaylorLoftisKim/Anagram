@@ -1,0 +1,10 @@
+<h1>Fun with Anagrams</h1>
+
+<h2>Your first word was: @Model["primary"]</h2>
+<h3>Possible anagrams for @Model["primary"] in your list are: </h3>
+<ul>
+  @foreach(string anagram in @Model["results"])
+  {
+    <li>@anagram</li>
+  }
+</ul>

@@ -9,6 +9,17 @@ namespace Anagram.Objects
     private string _primaryWord;
     private string _secondaryWord;
     private List<string> _listWords = new List<string> {};
+    private static List<AnagramCheck> _instances = new List<AnagramCheck> {};
+
+    public void AddAnagramCheck()
+    {
+      _instances.Add(this);
+    }
+
+    public static AnagramCheck GetAnagramCheck()
+    {
+      return _instances[0];
+    }
 
     public AnagramCheck(string firstWord, string secondWord)
     {

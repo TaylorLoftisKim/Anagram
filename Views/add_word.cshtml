@@ -6,3 +6,9 @@
   </div>
   <button type="submit">Submit</button>
 </form>
+@if(Model.GetWordList().Count > 0)
+{
+  <form action="/anagram/check" method="post">
+    <button type="submit">Check your list against your first word</button>
+  </form>
+}
